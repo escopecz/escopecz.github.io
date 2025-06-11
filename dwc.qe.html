@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>QE DWC test</title>
+    </head>
+    <body>
+        <h1>QE DWC Testing</h1>
+
+        <div data-slot="dwc" data-param-slot-name="yellow">
+          <p>Default content</p>
+        </div>
+
+        <script>
+            (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+                w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+                m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://john.qa.acs.acquia.io/mtc.js','mt');
+        
+            mt('send', 'pageview');
+        </script>
+    </body>
+</html>
